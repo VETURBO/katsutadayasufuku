@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
       <a-assets>
         <a-asset-item id="usi" src="https://github.com/VETURBO/katsutadayasufuku/blob/main/assets/katsutadayasufuku.glb"></a-asset-item>
       </a-assets>
-      <!-- マーカーの.pattファイルを読み込む -->
       <a-marker type="pattern" url="https://github.com/VETURBO/katsutadayasufuku/blob/main/assets/pattern-katsutadayasufuku.patt">
-        <!-- 3Dモデルを呼び出す -->
-        <a-entity scale="0.5 0.5 0.5" gltf-model="#usi" rotation="90 0 0"></a-entity>
+        <a-entity gltf-model="#usi" scale="0.5 0.5 0.5" rotation="90 0 0"></a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
